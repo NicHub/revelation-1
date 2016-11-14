@@ -1,1 +1,4 @@
-# revelation-1
+
+<http://osonsnousreveler.com/>
+
+<https://osonsnousreveler.github.io/revelation-1/>
