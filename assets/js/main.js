@@ -3,6 +3,29 @@
 
 $( document ).ready( function() {
 
+  // http://jedfoster.com/Readmore.js/
+  ( function() {
+    $('article').readmore({
+      collapsedHeight: 312,
+      speed: 200
+    });
+
+    // Wait a tick before firing Readmore on the #info block to give Prettify time to finish painting.
+    setTimeout(function() {
+      $('#info').readmore({
+        moreLink: '<a href="#">Usage, examples, and options</a>',
+        collapsedHeight: 632,
+        speed: 200,
+        afterToggle: function(trigger, element, expanded) {
+          if(! expanded) { // The "Close" link was clicked
+            $('html, body').animate({scrollTop: $(element).offset().top}, {duration: 100});
+          }
+        }
+      });
+    }, 100);
+  })();
+
+
 
 
   // Ajoute target="_blank" aux liens externes.
@@ -38,6 +61,9 @@ $( document ).ready( function() {
     var nextLink = $( menuLinks[ activeLinkIndex < (nbLinks - 1) ? activeLinkIndex + 1 : 0           ] ).children( "a" ).attr( 'href' );
     var prevLink = $( menuLinks[ activeLinkIndex > 0             ? activeLinkIndex - 1 : nbLinks - 1 ] ).children( "a" ).attr( 'href' );
     var firstLink = $( "ul.nav li" ).first().children( "a" ).attr( 'href' );
+
+    $( 'a#bouton-prec' ).attr( "href", prevLink );
+    $( 'a#bouton-suiv' ).attr( "href", nextLink );
 
     Mousetrap.bind( 'left',       function( e ) { navigate_to_page( e, prevLink  ); });
     Mousetrap.bind( 'esc',        function( e ) { navigate_to_page( e, firstLink ); });
