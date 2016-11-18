@@ -1,4 +1,8 @@
 User-agent: *
-Disallow: /
+Allow: /
 Disallow: /screenshots/
 Disallow: /images/revelationnaires/
+Disallow: pinegrow.json
+Disallow: README.md
+Disallow: telechargement-ebook.html
+Disallow: confirmation-inscription.html

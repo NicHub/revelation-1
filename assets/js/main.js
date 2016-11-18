@@ -6,7 +6,7 @@ $( document ).ready( function() {
   // http://jedfoster.com/Readmore.js/
   ( function() {
     $('article').readmore({
-      collapsedHeight: 312,
+      collapsedHeight: 293,
       speed: 200
     });
 
