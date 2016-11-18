@@ -21,7 +21,7 @@ ExpiresActive On
 
 ### Expire tout le reste un jour après sa dernière modification
 ### (utilisation de la syntaxe alternative)
-ExpiresDefault "modification plus 1 minute"
+ExpiresDefault "modification plus 1 day"
 
 ### Applique une en-tête Cache-Control à index.html
 <Files index.html>
