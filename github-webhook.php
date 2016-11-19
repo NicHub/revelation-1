@@ -11,7 +11,7 @@ function main()
     if( isset( $_POST[ 'payload' ] ) )
     {
         $myfile = fopen( "github-webhook-log.json", "w" ) or die ( "Impossible d’ouvrir “github-webhook.log” en écriture" );
-        fwrite( $myfile, '{"github-webhook-last-pull-time":"' );
+        fwrite( $myfile, '{"github_webhook_last_pull_time":"' );
         fwrite( $myfile, $curDateTime );
         fwrite( $myfile, '"}' );
         fclose( $myfile );

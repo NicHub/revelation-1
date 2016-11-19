@@ -3,6 +3,16 @@
 
 $( document ).ready( function() {
 
+  // Lit l’heure de la dernière mise à jour des fichiers
+  // (pull de Github avec Webhook)
+  ( function() {
+    $.getJSON( "http://osonsnousreveler.com/github-webhook-log.json", function( data ) {
+      $( 'p#last-update' ).html( "Dernière mise à jour<br/>" + data.github_webhook_last_pull_time );
+    });
+  })();
+
+
+
   // http://jedfoster.com/Readmore.js/
   ( function() {
     $('article').readmore({
