@@ -200,9 +200,9 @@ body > div.container:last-child {
 
 
 
-
-.div-principal div p:first-of-type::first-letter  {
-	font-weight: 400;
+/* Lettrines */
+main p:not( .no-drop-cap ):first-of-type::first-letter {
+	font-weight: bolder;
 }
 
 
@@ -441,7 +441,7 @@ article + [data-readmore-toggle] {
 
 
 /* http://codepen.io/aFarkas/pen/VYGvde */
-#p-creations.div-principal *, #p-creations.div-principal :before, #p-creations.div-principal :after {
+#p-creations main *, #p-creations main :before, #p-creations main :after {
   box-sizing: border-box;
 }
 
