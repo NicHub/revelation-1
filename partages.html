@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="« Une invitation à faire naître notre étoile intérieure »" />
-        <meta name="keywords" content="Mandala, Dessin centré, Génogramme, Arbre généalogique, Trans­génération­nel, Astrologie, Alchimie, Créations symboliques et initiatiques, Légende personnelle" />
+        <meta name="keywords" content="Mandala, Dessin centré, Génogramme, Arbre généalogique, Trans­génération­nel, Astrologie, Alchimie, Créations symboliques et initiatiques, Légende personnelle, Art Thérapie, Art Therapy" />
         <meta name="author" content="Charlotte Guignard, Nicolas Jeanmonod" />
         <title data-pgc-field="title">Osons Nous Révéler ! Partages</title>
         <meta name="og:url" content="http://osonsnousreveler.com/" />
@@ -38,7 +38,7 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" data-pgc-field="menu-visibility-1">
                         <span class="sr-only">Permuter la navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -47,12 +47,23 @@
                     <a class="navbar-brand" href="index.html"><span>O</span>sons <span>N</span>ous <span>R</span>évéler <span>!</span></a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li data-pgc-field="L100">
-                            <a href="index.html">Accueil</a>
+                    <ul class="nav navbar-nav navbar-right" data-pgc-field="menu-visibility-2">
+                        <li class="dropdown" data-pgc-field="L100">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projet <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li data-pgc-field="L110">
+                                    <a href="index.html">Accueil</a>
+                                </li>
+                                <li data-pgc-field="L120">
+                                    <a href="un-reve.html">Un rêve</a>
+                                </li>
+                                <li data-pgc-field="L130">
+                                    <a href="charlotte-guignard.html">Charlotte Guignard</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="dropdown" data-pgc-field="L200">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accompagnement <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accompagnements <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li data-pgc-field="L210">
                                     <a href="accompagnement-et-ethique.html">Accompagnement &amp; éthique</a>
@@ -68,24 +79,26 @@
                                 </li>
                             </ul>
                         </li>
-                        <li data-pgc-field="L300">
-                            <a href="livre.html">Livre</a>
-                        </li>
-                        <li class="dropdown" data-pgc-field="L400">
+                        <li class="dropdown" data-pgc-field="L300">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Créations <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li data-pgc-field="L410">
+                                <li data-pgc-field="L310">
                                     <a href="creations-presentation.html">Présentation</a>
                                 </li>
-                                <li data-pgc-field="L420">
+                                <li data-pgc-field="L320">
                                     <a href="creations-galerie.html">Galerie</a>
                                 </li>
                             </ul>
                         </li>
-                        <li data-pgc-field="L500" class="active">
-                            <a href="partages.html">Partages</a>
+                        <li class="dropdown" data-pgc-field="L400">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Écriture <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li data-pgc-field="L410">
+                                    <a href="livre.html">Livre</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li data-pgc-field="L600">
+                        <li data-pgc-field="L500" class="active">
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -107,7 +120,7 @@
                 </div>
             </div>
         </main>
-        <div class="container hidden-print btn-prev-next text-center">
+        <div id="btn-prev-next" class="container hidden-print btn-prev-next text-center" data-pgc-field="btn-prev-next">
             <div class="row">
                 <div class="col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-3">
                     <a id="bouton-prec" title="Page précédente" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
