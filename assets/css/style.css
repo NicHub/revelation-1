@@ -558,7 +558,7 @@ Encarts ateliers
 	background-color: #ff0066;
 }
 .at3 {
-	background-color: LightSeaGreen ;
+	background-color: LightSeaGreen;
 }
 
 .encart-atelier div:nth-child( 2 ) {
@@ -574,11 +574,48 @@ Encarts ateliers
 	min-height: 230px;
 }
 
-.encart-atelier-row  .row {
+.encart-atelier-row .row {
     margin: 10px -5px;
     /*border: 10px solid red*/
 }
 
+.encart-atelier-row .row img {
+	max-width: 50%;
+}
+
+
+#p-accueil .at1 {
+	background-color: rgba(255, 165, 0, 0.5);
+}
+#p-accueil .at2 {
+	background-color: rgba(255, 0, 102, 0.5);
+}
+#p-accueil .at3 {
+	background-color: rgba(32, 178, 170, 0.5);
+}
+#p-accueil .encart-atelier-row .row {
+	min-height: 950px;
+}
+#p-accueil .encart-atelier div:nth-child( 1 ) {
+	min-height: 190px;
+}
+#p-accueil .encart-atelier div:nth-child( 2 ) {
+	background: transparent;
+	color: inherit;
+	min-height: 170px;
+	padding-top: 0;
+}
+#p-accueil .encart-atelier div:nth-child( 3 ) {
+	background-color: transparent;
+	color: inherit;
+	min-height: 270px;
+}
+#p-accueil .encart-atelier div:nth-child( 4 ) {
+	min-height: 215px;
+}
+#p-accueil .encart-atelier div:nth-child( 5 ) {
+	min-height: 230px;
+}
 
 
 
@@ -595,5 +632,29 @@ Encarts ateliers
 }
 .item img {
 	min-height: 600px;
+}
+*/
+
+
+.signature {
+	float: right;
+	margin-right: 20px;
+}
+
+
+.gal-img {
+	margin-bottom: 22px;
+}
+
+.display-none {
+	display: none;
+}
+
+/*
+.gal-img {
+	border:1px solid
+}
+.gal-img img {
+	border:1px solid
 }
 */

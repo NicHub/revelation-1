@@ -83,7 +83,7 @@ $( document ).ready( function() {
     $( 'a#bouton-suiv' ).attr( "href", nextLink );
 
     Mousetrap.bind( 'left',       function( e ) { navigate_to_page( e, prevLink  ); });
-    Mousetrap.bind( 'esc',        function( e ) { navigate_to_page( e, firstLink ); });
+    // Mousetrap.bind( 'esc',        function( e ) { navigate_to_page( e, firstLink ); });
     Mousetrap.bind( 'right',      function( e ) { navigate_to_page( e, nextLink  ); });
 
     $( 'body' ).on( 'mousedown',  function( e ) { disable_swipe( e ); });
