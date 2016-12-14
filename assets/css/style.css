@@ -673,10 +673,15 @@ Encarts ateliers
 	border-width: 5px;
 	font-weight: bold;
 	font-size: 120%;
+	white-space: normal;
 }
 .btn-primary:hover {
 	background-color: inherit;
 	border-color: inherit;
 	color: #b53c7c;
 }
-
+@media (min-width: 767px) {
+	.only-small {
+		display: none;
+	}
+}
