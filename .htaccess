@@ -15,7 +15,6 @@ AddOutputFilterByType DEFLATE application/x-javascript
 # SetOutputFilter DEFLATE
 # </files>
 
-
 ### activate mod_expires
 ExpiresActive On
 
@@ -33,4 +32,8 @@ RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
+# Page non trouvée
 ErrorDocument 404 /404.html
+
+# Interdit le listing des répertoires
+Options -Indexes
