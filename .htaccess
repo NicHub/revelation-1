@@ -27,6 +27,12 @@ ExpiresDefault "modification plus 1 day"
 Header append Cache-Control "public, must-revalidate"
 </Files>
 
+### Page non trouvée
+ErrorDocument 404 /404.html
+
+### Interdit le listing des répertoires
+Options -Indexes
+
 ### Redirection www -> non www
 ### http://stackoverflow.com/questions/234723/generic-htaccess-redirect-www-to-non-www
 RewriteEngine On
@@ -34,11 +40,10 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-### Page non trouvée
-ErrorDocument 404 /404.html
-
-### Interdit le listing des répertoires
-Options -Indexes
+### Redirige toutes les pages index.html vers leur racine
+### https://moz.com/community/q/redirecting-index-html-to-the-root
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
 ### Redirections
 Redirect permanent   /creations.html             http://osonsnousreveler.com/creations-presentation.html
