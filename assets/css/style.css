@@ -234,6 +234,13 @@ body#p-livre iframe {
 	height: 315px;
 	width: 100%;
 }
+body#accompagnement-collectif-enfants-ados iframe {
+	margin: 25px 0;
+	padding: 0;
+	/*width="560" height="315"*/
+	height: 315px;
+	width: 100%;
+}
 
 
 .well {
@@ -549,8 +556,10 @@ Encarts ateliers
 	line-height: 100%;
 	font-style: italic;
 }
-.encart-atelier .dates ul {
+.encart-atelier .dates ul,
+.encart-atelier .dates p {
 	font-size: 80%;
+	line-height: 110%;
 }
 .encart-atelier div p:first-of-type::first-letter  {
 	font-weight: inherit;
@@ -575,7 +584,7 @@ Encarts ateliers
 }
 .encart-atelier div:nth-child( 3 ) {
 	background-color: white;
-	min-height: 260px;
+	min-height: 0px;
 }
 .encart-atelier div:nth-child( 4 ) {
 	min-height: 230px;
@@ -616,10 +625,10 @@ Encarts ateliers
 #p-reve .encart-atelier div:nth-child( 3 ) {
 	background-color: transparent;
 	color: inherit;
-	min-height: 170px;
+	min-height: 270px;
 }
 #p-reve .encart-atelier div:nth-child( 4 ) {
-	min-height: 10px;
+	min-height: 240px;
 }
 
 
@@ -685,3 +694,56 @@ Encarts ateliers
 		display: none;
 	}
 }
+
+
+.footnote, sup, sub
+{
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	font-size: 0.65em;
+
+}
+
+sub { top: 0.5ex; }
+.footnote, sup { bottom: 1ex; }
+.footnotes hr { display: none; }
+.footnotes p { text-indent: 0; }
+.footnotes ol { margin: 0 0 0 0.6cm; }
+
+h1 sup {
+	text-transform: lowercase;
+}
+
+
+.mise-a-jour {
+	text-align: center;
+	/*font-family: courier, monospace;*/
+	font-size: 10pt;
+	font-style: italic;
+}
+
+.print-only {
+	display: none;
+}
+#accompagnement-programme-dates .print-warning {
+	display: none;
+}
+
+@media print {
+	.print-only {
+		color: #ff0066;
+		display: inherit;
+	}
+	#accompagnement-programme-dates main {
+		display: none;
+	}
+	#accompagnement-programme-dates .print-warning {
+		color: firebrick;
+		font-size: 50pt;
+		display: inherit;
+		text-align: center;
+	}
+}
+

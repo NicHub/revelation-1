@@ -100,13 +100,19 @@
                                     <a href="accompagnement-et-ethique.html">Accompagnement &amp; éthique</a>
                                 </li>
                                 <li data-pgc-field="L220">
-                                    <a href="accompagnement-individuel.html">Individuel</a>
-                                </li>
-                                <li data-pgc-field="L230">
-                                    <a href="accompagnement-collectif.html">Collectif</a>
+                                    <a href="accompagnement-individuel.html">Consultations individuelles</a>
                                 </li>
                                 <li data-pgc-field="L240">
-                                    <a href="accompagnement-les-outils.html">Les outils</a>
+                                    <a href="accompagnement-les-outils.html">Outils d’accompagnement</a>
+                                </li>
+                                <li data-pgc-field="L230">
+                                    <a href="accompagnement-collectif.html">Ateliers collectifs adultes</a>
+                                </li>
+                                <li data-pgc-field="L235">
+                                    <a href="accompagnement-collectif-enfants-ados.html">Ateliers collectifs enfants &amp;&nbsp;ados</a>
+                                </li>
+                                <li data-pgc-field="L250">
+                                    <a href="accompagnement-programme-dates.html">Programme / Dates</a>
                                 </li>
                             </ul>
                         </li>
@@ -147,7 +153,7 @@
                     <div class="col-md-12 text-center">
                         <p class="align-center">La page <br><code style="word-break: break-all;" id="page404"></code><br>n’existe pas sur ce site.</p>
                         <p class="align-center"><a href="/"><i style="font-size:60pt; color:#AAA; margin-top:40px; margin:40px 0;" class="fa fa-exclamation-triangle"></i><br>Retourner à l’accueil</a></p>
-                        <script>
+                        <script type="pinegrow/disabled">
     var pp = document.getElementById( "page404" );
     pp.innerHTML = window.location.href;
 </script>
@@ -171,7 +177,10 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <p class="text-center">© 2016 osonsnousreveler.com</p>
+                <p class="text-center">© <span id="annee"></span> osonsnousreveler.com</p>
+                <script type="text/javascript">
+                    document.getElementById( "annee" ).innerHTML = new Date().getFullYear();
+                </script>
             </div>
         </footer>
         <script src="assets/js/jquery-2.2.4.min.js"></script>

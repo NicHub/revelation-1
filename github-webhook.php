@@ -1,7 +1,7 @@
 <?php
 
 date_default_timezone_set( 'Europe/Paris' );
-$curDateTime = date( 'Y-m-d – H:i:s' );
+$curDateTime = date( 'Y-m-d<br />H:i:s' );
 
 main();
 
