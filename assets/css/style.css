@@ -736,7 +736,7 @@ h1 sup {
 		color: #ff0066;
 		display: inherit;
 	}
-	#accompagnement-programme-dates main {
+	#accompagnement-programme-dates main .container {
 		display: none;
 	}
 	#accompagnement-programme-dates .print-warning {
