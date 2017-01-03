@@ -13,3 +13,9 @@
 rsync -avn --delete --progress --exclude='.git/' --exclude='.*' ~/Sites/osonsnousreveler.com/revelation-1/ ~/Dropbox/osons_nous_reveler/site/
 
 -->
+
+
+## JSON-LD
+
+https://search.google.com/structured-data/testing-tool
+
