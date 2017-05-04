@@ -19,3 +19,4 @@ rsync -avn --delete --progress --exclude='.git/' --exclude='.*' ~/Sites/osonsnou
 
 https://search.google.com/structured-data/testing-tool
 
+
