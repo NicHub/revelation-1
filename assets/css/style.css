@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Source+Sans+Pro:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
 
 /*
-jaune menu ⇒ #fec54c
-vert menu  ⇒ #0b3741
-rose h2    ⇒ #b53c7c
-rose brand ⇒ #ff0066
+jaune menu ⇒ #fec54c = rgba(254, 197, 76, 1)
+vert menu  ⇒ #0b3741 = rgba(11, 55, 65, 1)
+rose h2    ⇒ #b53c7c = rgba(181, 60, 124, 1)
+rose brand ⇒ #ff0066 = rgba(255, 0, 102, 1)
 */
 
 
@@ -72,7 +74,7 @@ http://jsfiddle.net/rx4ptj2k/4/
 	font-size: 30pt;
 	font-weight: normal;
 	color: #b53c7c;
-	font-family: "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
+	font-family: "Special Elite", "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
 }
 #p-accueil div.jumbotron .form-inscription span {
 	color: #b53c7c;
@@ -209,7 +211,7 @@ main p:not( .no-drop-cap ):first-of-type::first-letter {
 
 
 body#p-livre .titre {
-	font-family: "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
+	font-family: "Special Elite", "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
 	font-size: 22pt;text-align: left;
 	margin-top: 40px;
 }
@@ -234,7 +236,7 @@ body#p-livre iframe {
 	height: 315px;
 	width: 100%;
 }
-body#accompagnement-collectif-enfants-ados iframe {
+body#p-ateliers-scolaires iframe {
 	margin: 25px 0;
 	padding: 0;
 	/*width="560" height="315"*/
@@ -351,26 +353,26 @@ http://work.smarchal.com/twbscolor/
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #dee9ec;
+	color: #dee9ec;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #fec54c;
+	color: #fec54c;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #fec54c;
-    background-color: #0b3741;
+	color: #fec54c;
+	background-color: #0b3741;
   }
 }
 
 /* nico */
 .navbar-default .navbar-toggle {
-    border:1px solid #b53c7c;
+	border:1px solid #b53c7c;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    border:1px solid #b53c7c;
+	border:1px solid #b53c7c;
 }
 .navbar-default {
 	border: 10px solid #0b3741;
@@ -384,7 +386,7 @@ http://work.smarchal.com/twbscolor/
 }
 nav.navbar a.navbar-brand {
 	text-transform: none;
-	font-family: "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
+	font-family: "Special Elite", "Papyrus", "Architects Daughter", "Georgia", "Palatino", serif;
 	color: #ff0066;font-size: 28px;
 	font-weight: 300;
 }
@@ -591,8 +593,8 @@ Encarts ateliers
 }
 
 .encart-atelier-row .row {
-    margin: 10px -5px;
-    /*border: 10px solid red*/
+	margin: 10px -5px;
+	/*border: 10px solid red*/
 }
 
 .encart-atelier-row .row img {
@@ -745,5 +747,231 @@ h1 sup {
 		display: inherit;
 		text-align: center;
 	}
+}
+
+
+
+h1, h2, h3, h4, h5, h6, nav
+{
+	font-family: 'Special Elite', cursive;
+}
+blockquote {
+	font-family: 'Special Elite', cursive;
+	font-size: 110%;
+	color: #b53c7c;
+}
+
+
+/*
+Accueil
+*/
+body#p-accueil-v2  {
+	margin-bottom: 0;
+	background-image: url( ../../images/osons-nous-reveler-fond-2-2344x1472.jpg );
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center center;
+	background-origin: content-box;
+	background-clip: content-box;
+	background-size: cover;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	text-align: center;
+	color: #fff;
+}
+@media( max-device-width: 768px ) {
+	body#p-accueil-v2 {
+		background-image: url( ../../images/osons-nous-reveler-fond-2-1631x1024.jpg );
+		background-repeat: no-repeat;
+		/*background-attachment: fixed;*/
+		background-position: center center;
+		background-origin: content-box;
+		background-clip: content-box;
+		background-size: cover;
+	}
+}
+
+body#p-accueil-v2 canvas#spiders {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+body#p-accueil-v2 h1 {
+	font-size: 60px;
+	font-weight: inherit;
+	margin-top: 50vh;
+	text-transform: uppercase;
+}
+
+body#p-accueil-v2 .splash-1
+{
+	font-size: 5.5vh;
+	text-transform: uppercase;
+	font-family: 'Special Elite', cursive;
+	text-align: center;
+	margin-top: 30vh;
+	/*
+	color: rgb( 255, 0, 255 );
+	*/
+	color: firebrick;
+	display: block;
+}
+body#p-accueil-v2 .splash-1 a {
+	color: inherit;
+}
+
+body#p-accueil-v2 .splash-2
+{
+	font-size: 3.0vh;
+	font-family: 'Special Elite', cursive;
+	text-align: right;
+	margin-right: 10vw;
+	max-width:1100px;
+	float: right;
+	color: white;
+	clear: both;
+}
+body#p-accueil-v2 .splash-2 span {
+	padding: 10px 20px 0;
+	/*
+	background-color: rgba( 255, 0, 255,0.75 );
+	border: 3px solid rgba( 255, 0, 255,0.9 );
+	*/
+	background-color: rgba(255, 0, 102, 0.75);
+	border: 3px solid rgba(255, 0, 102, 0.9);
+	border-radius: 5px;
+}
+
+body#p-accueil-v2 #splash-20 {
+	margin-top: 3vh;
+}
+body#p-accueil-v2 #splash-21 {
+	margin-top: 0.5vh;
+}
+body#p-accueil-v2 .opacity0 {
+	opacity: 0;
+}
+
+
+
+
+
+/*
+Page projet
+*/
+body#p-projet  {
+	margin-bottom: 0;
+	background-image: url( ../../images/osons-nous-reveler-fond-projet-2426x1471.jpg );
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center center;
+	background-origin: content-box;
+	background-clip: content-box;
+	background-size: cover;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	text-align: center;
+	color: #fff;
+}
+@media( max-device-width: 768px ) {
+	body#p-projet {
+		background-image: url( ../../images/osons-nous-reveler-fond-projet-1689x1024.jpg );
+		background-repeat: no-repeat;
+		/*background-attachment: fixed;*/
+		background-position: center center;
+		background-origin: content-box;
+		background-clip: content-box;
+		background-size: cover;
+	}
+}
+
+body#p-projet canvas#spiders {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+body#p-projet h1 {
+	font-size: 60px;
+	font-weight: inherit;
+	margin-top: 50vh;
+	text-transform: uppercase;
+}
+
+
+body#p-projet .splash-1
+{
+	font-size: 3.5vh;
+	text-transform: uppercase;
+	font-family: 'Special Elite', cursive;
+	text-align: center;
+	margin: 30vh 10% 0;
+	padding: 20px;
+	/*
+	color: rgb( 255, 0, 255 );
+	background-color: rgba( 178,34,34, 0.7 );
+	*/
+	border-radius: 20px;
+	color: white;
+	display: block;
+}
+body#p-projet .splash-1 > span {
+	line-height: 200%;
+	padding: 10px 20px 0;
+	background-color: rgba( 255,0,255, 0.5 );
+	border: 5px solid rgba( 255,0,255, 0 );
+	border-radius: 5px;
+}
+
+body#p-projet .splash-1 a {
+	color: inherit;
+}
+
+body#p-projet .splash-2
+{
+	font-size: 3.0vh;
+	font-family: 'Special Elite', cursive;
+	text-align: right;
+	margin-right: 10vw;
+	max-width:1100px;
+	float: right;
+	color: rgba(255, 0, 102, 1);
+	clear: both;
+}
+body#p-projet .splash-2 span {
+	padding: 10px 20px 0;
+	/*
+	background-color: rgba( 255, 0, 255,0.75 );
+	border: 3px solid rgba( 255, 0, 255,0.9 );
+	*/
+	background-color: rgba(255, 255, 255, 0.75);
+	border: 3px solid rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+}
+
+body#p-projet #splash-20 {
+	margin-top: 3vh;
+}
+body#p-projet #splash-21 {
+	margin-top: 0.5vh;
+}
+body#p-projet .opacity0 {
+	opacity: 0;
+}
+
+body#p-projet main {
+	margin-bottom: 300px;
+}
+
+
+
+
+.no-hyph {
+	hyphens: none;
 }
 

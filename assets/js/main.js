@@ -1,7 +1,14 @@
 "use strict";
 
-
 $( document ).ready( function() {
+
+
+
+  // Animation des textes d’intro.
+  ( function() {
+    if( $( '.splash' ).length > 0 )
+      { TweenMax.staggerFrom( ".splash", 2, { scale:0.5, opacity:0, delay:0.1, ease:Elastic.easeOut, force3D:true }, 0.05 ); }
+  })();
 
 
 
@@ -12,7 +19,7 @@ $( document ).ready( function() {
     // On ne fait la requête que si p#last-update existe sur la page
     if( last_update.length > 0 )
     {
-      $.getJSON( "http://osonsnousreveler.com/github-webhook-log.json", function( data ) {
+      $.getJSON( "github-webhook-log.json", function( data ) {
         last_update.html( "Dernière mise à jour<br/>" + data.github_webhook_last_pull_time );
       });
     }
@@ -68,6 +75,7 @@ $( document ).ready( function() {
 
     var activeLinkIndex = -1;
     for( var i=0; i<nbLinks; i++ ) {
+      // console.log( $(menuLinks[ i ]).children( "a" ).attr( 'href' ) );
       if( $( menuLinks[ i ] ).hasClass( "active" ) )
       {
         activeLinkIndex = i;
