@@ -20,7 +20,7 @@ $( function() {
 
         target = {
             x: width / 2,
-            y: height / 3
+            y: height / 2
         };
 
         canvas = document.getElementById( 'spiders' );
