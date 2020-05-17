@@ -1,6 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /screenshots/
-Disallow: /images/revelationnaires/
-Disallow: pinegrow.json
-Disallow: README.md
+Disallow: /
